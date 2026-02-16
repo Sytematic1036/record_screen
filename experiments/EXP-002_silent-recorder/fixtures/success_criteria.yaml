@@ -1,0 +1,20 @@
+criteria:
+  - name: "Ingen terminal syns"
+    test: "Starta inspelning, kolla att inget fönster öppnas"
+    expected: "Ingen synlig terminal"
+
+  - name: "Tray-ikon visas"
+    test: "Starta inspelning, kolla system tray"
+    expected: "Röd ikon syns vid klockan"
+
+  - name: "Ctrl+Alt+R startar"
+    test: "Tryck Ctrl+Alt+R"
+    expected: "Inspelning startar, ikon dyker upp"
+
+  - name: "Ctrl+Alt+Q stoppar"
+    test: "Tryck Ctrl+Alt+Q under inspelning"
+    expected: "Inspelning stoppar, ikon försvinner, fil sparas"
+
+  - name: "Video är spelbar"
+    test: "ffprobe output.mp4"
+    expected: "Duration > 0, video stream finns"
