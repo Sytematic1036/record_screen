@@ -1,0 +1,24 @@
+# Inspelningar
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.webm
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
