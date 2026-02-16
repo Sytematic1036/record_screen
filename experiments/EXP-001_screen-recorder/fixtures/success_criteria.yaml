@@ -1,0 +1,20 @@
+criteria:
+  - name: "FFmpeg är installerat"
+    test: "ffmpeg -version"
+    expected: "Version visas utan fel"
+
+  - name: "Skärminspelning fungerar"
+    test: "Kör record.py/record.sh och spela in 5 sekunder"
+    expected: "En .mp4-fil skapas som går att spela upp"
+
+  - name: "Inspelning kan stoppas"
+    test: "Stoppa inspelning programmatiskt"
+    expected: "Processen avslutas och filen är spelbar"
+
+  - name: "Videofil har innehåll"
+    test: "ffprobe output.mp4"
+    expected: "Duration > 0, video stream finns"
+
+  - name: "Koden följer repo-patterns"
+    test: "Manuell granskning"
+    expected: "Shell-skript stil som setup.sh"
